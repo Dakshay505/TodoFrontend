@@ -39,7 +39,7 @@ a {
 .todo {
   background-color: $color2;
   border-radius: 5px;
-
+  overflow-y: auto;
   @include flexBox(row, center, space-between);
   width: 100%;
   padding: 2rem;
@@ -52,7 +52,13 @@ a {
     height: 2rem;
   }
 }
-
+.div1{
+  width: 50%;
+}
+.description {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
 .loader {
   @include defaultStyle;
   @include flexBox(column, center, center);

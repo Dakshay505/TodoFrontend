@@ -122,7 +122,17 @@ const Home = () => {
               onChange={(e) => setTitle(e.target.value)}
             />
             <textarea
-              style={{height:"100px",width:"100%"}}
+              className="textArea"
+              style={{
+                minHeight: "100px",
+                width: "100%",
+                outline: "none",
+                borderRadius: "10px",
+                border: "1px solid #ccc",
+                padding: "8px", 
+                resize: "vertical",
+                fontSize: "15px",
+              }}
               type="text"
               placeholder="Description"
               required
