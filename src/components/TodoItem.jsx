@@ -11,9 +11,9 @@ const TodoItem = ({
 }) => {
   return (
     <div className="todo">
-      <div >
+      <div className="div1">
         <h4>{title}</h4>
-        <p style={{height:"100px",boxSizing:"border-box"}}>{description}</p>
+        <p className="description">{description}</p>
       </div>
       <div>
         <input

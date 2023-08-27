@@ -13,25 +13,25 @@ import axios from "axios";
 const App = () => {
   const { setUser, setIsAuthenticated, setLoading } = useContext(Context);
 
-  useEffect(() => {
-    console.log("heyy"); 
-    setLoading(true);
-    axios
-      .get(`${server}/users/me`, {
-        withCredentials: true,
-      })
-      .then((res) => {
-        console.log(res)
-        setUser(res.data.user);
-        setIsAuthenticated(true);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setUser({});
-        setIsAuthenticated(false);
-        setLoading(false);
-      });
-  }, []);
+  // useEffect(() => {
+  //   console.log("heyy"); 
+  //   setLoading(true);
+  //   axios
+  //     .get(`${server}/users/me`, {
+  //       withCredentials: true,
+  //     })
+  //     .then((res) => {
+  //       console.log(res)
+  //       setUser(res.data.user);
+  //       setIsAuthenticated(true);
+  //       setLoading(false);
+  //     })
+  //     .catch((error) => {
+  //       setUser({});
+  //       setIsAuthenticated(false);
+  //       setLoading(false);
+  //     });
+  // }, []);
   return (
     <Router>
       <Header />
